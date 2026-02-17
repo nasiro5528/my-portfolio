@@ -17,5 +17,10 @@ var monthAbbreviations = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 ];
 var formattedDate = monthAbbreviations[currentDate.getMonth()] + "-" + currentDate.getDate() + "-" + currentDate.getFullYear();
-// If you have an element with id="date", it will be set; otherwise you can remove or adjust.
-// document.getElementById("date").value = formattedDate;
+// main.js - Dynamic text animation for the home section
+var typed = new Typed(".text", {
+    strings: ["Web Developer", "Information Scientist", "Problem Solver"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+});

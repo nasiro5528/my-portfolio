@@ -6,225 +6,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasir Mohammed - Personal Portfolio</title>
     <meta name="description"
-        content="I am Nasir Mohammed, a web developer passionate about creating beautiful and functional websites. This is my personal portfolio showcasing my projects and skills." />
+        content="I am Nasir Mohammed, a web developer passionate about creating beautiful and functional websites. This is my personal portfolio showcasing my projects and skills.">
     <meta name="keywords" content="Nasir Mohammed, portfolio, web developer, projects, skills">
-    <!-- Corrected CSS path (same folder) -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <meta name="author" content="Nasir Mohammed">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Boxicons for up arrow (optional, but included via CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Nasir.</a>
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#About" style="--i:2">About</a>
-            <a href="#Service" style="--i:3">Service</a>
-            <a href="#project" style="--i:4">Project</a>
-            <a href="#Skills" style="--i:4">Skill</a>
-            <a href="#Contact" style="--i:5">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <article class="Home">
-        <section class="Photo-home">
-            <div class="Home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>Nasir Mohammed</h1>
-                <h3><span class="text"></span></h3>
-                <p>
-                <h2>Welcome to my portfolio! I am Nasir Mohammed</h2>
-                </p>
-                <!-- If index.doc exists, keep it; otherwise remove or fix -->
-                <a href="index.doc" class="button-box">Download my CV</a>
-            </div>
-            <div class="nasiro-photo">
-                <!-- Fixed image path: images/ folder -->
-                <img src="images/IMG_20240507_222013_457.jpg" alt="Nasir">
-            </div>
-        </section>
-    </article>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Nasir Mohammed</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>Welcome to my portfolio! I'm a passionate web developer dedicated to crafting high-quality and engaging
+                digital experiences.</p>
 
-    <section class="About" id="About">
-        <div class="nasir-photo">
-            <!-- Fixed image path -->
-            <img src="images/my best photo.jpg" alt="Nasir photo" width="80px" height="100px">
+            <a href="index.doc" class="btn">Download CV</a>
         </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4></h4>
-            <p>
-                I am Nasir Mohammed. I was born in south Oromia Guji zone. I learned my primary and secondary school in
-                Negelle city and I came to this campus in 2022. I am a dedicated Information Scientist with a
-                solid foundation in web and software development. I
-                obtained my Bachelor's degree in Information Science from Jimma University, where I mastered programming
-                languages such as JavaScript, C#, Python, and C++. As a junior developer, I bring a fresh perspective
-                and a strong enthusiasm for expanding my knowledge and skills.
-            </p>
-            <a href="https://youtu.be/XsqGg9ia4xU?si=RSpMbFNovEaEUwcO" class="button-box">My favorite media</a>
+        <div class="home-img">
+            <img src="images/IMG_20240507_222013_457.jpg" alt="Nasir">
         </div>
     </section>
 
-    <section class="Service" id="Service">
-        <div class="Service-Container">
-            <h1 class="Sub-title">My <span>Service</span></h1>
-            <div class="Service-list">
-                <div>
-                    <i class='bx bx-code-alt' style='color:#00eeff'></i>
-                    <h2>Website Develop and Design</h2>
-                    <p>
-                        Welcome to my website! I'm a passionate web developer dedicated to crafting high-quality and
-                        engaging websites. With a keen eye for design and a strong command of web technologies, I
-                        bring ideas to life and create digital experiences that captivate users. From responsive
-                        layouts...
-                    </p>
-                    <!-- Fixed certificate path -->
-                    <a href="images/my certificate 2024.pdf" class="read" target="_blank">View my certificate</a>
-                </div>
-                <div>
-                    <i class='bx bx-crop' style='color:#00eeff'></i>
-                    <h2>Tutorials</h2>
-                    <p>I taught junior students when I was in grades 11 and 12 subjects like chemistry and physics. I
-                        also grouped and helped elders and people with disabilities once a week.</p>
-                    <a href="#" class="#">Learn More</a>
-                </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/my best photo.jpg" alt="Nasir photo">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Information Scientist & Web Developer</h3>
+            <p>I am Nasir Mohammed, born in south Oromia Guji zone. I completed my primary and secondary education in
+                Negelle city and joined Jimma University in 2022. I hold a Bachelor's degree in Information Science,
+                where I mastered JavaScript, C#, Python, and C++. As a junior developer, I bring a fresh perspective and
+                a strong enthusiasm for continuous learning and innovation.</p>
+            <a href="https://youtu.be/XsqGg9ia4xU?si=RSpMbFNovEaEUwcO" class="btn">Favorite Media</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I create responsive, user‑friendly websites using modern technologies. From simple landing pages to
+                    complex web applications, I bring your ideas to life.</p>
+                <a href="images/my certificate 2024.pdf" class="btn" target="_blank">View Certificate</a>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-crop'></i>
+                <h3>Tutorials & Mentoring</h3>
+                <p>I have experience teaching chemistry and physics to junior students. I also enjoy mentoring and
+                    helping others grow in their technical skills.</p>
+                <a href="#" class="btn">Learn More</a>
             </div>
         </div>
     </section>
 
-    <h1 class="Sub-title"><span>My Skills</span></h1>
-    <section class="Skill-conatiner">
-        <div class="Container1" id="Skills">
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-                <div class="bar">
-                    <i class='bx bxl-html5' style='color:#e34c26'></i>
-                    <div class="info"><span>HTML</span></div>
-                    <div class="Prograss-line html"><span></span></div>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="technical-skills">
+                <h3 class="sub-heading">Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="skill-info"><i class='bx bxl-html5' style="color:#e34c26"></i><span>HTML</span></div>
+                    <div class="progress-line html"><span style="width:90%"></span></div>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-css3' style='color:#264de4'></i>
-                    <div class="info"><span>CSS</span></div>
-                    <div class="Prograss-line css"><span></span></div>
+                <div class="skill-bar">
+                    <div class="skill-info"><i class='bx bxl-css3' style="color:#264de4"></i><span>CSS</span></div>
+                    <div class="progress-line css"><span style="width:80%"></span></div>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-javascript' style='color:#323330'></i>
-                    <div class="info"><span>JavaScript</span></div>
-                    <div class="Prograss-line javascript"><span></span></div>
+                <div class="skill-bar">
+                    <div class="skill-info"><i class='bx bxl-javascript'
+                            style="color:#f0db4f"></i><span>JavaScript</span></div>
+                    <div class="progress-line javascript"><span style="width:50%"></span></div>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-python' style='color:#f89820'></i>
-                    <div class="info"><span>Python</span></div>
-                    <div class="Prograss-line Python"><span></span></div>
+                <div class="skill-bar">
+                    <div class="skill-info"><i class='bx bxl-python' style="color:#306998"></i><span>Python</span></div>
+                    <div class="progress-line python"><span style="width:64%"></span></div>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-csharp' style='color:#f89820'></i>
-                    <div class="info"><span>C#</span></div>
-                    <div class="Prograss-line csharp"><span></span></div>
+                <div class="skill-bar">
+                    <div class="skill-info"><i class='bx bxl-csharp' style="color:#9b4f96"></i><span>C#</span></div>
+                    <div class="progress-line csharp"><span style="width:76%"></span></div>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-c-plus-plus' style='color:#044f88'></i>
-                    <div class="info"><span>C++</span></div>
-                    <div class="Prograss-line c"><span></span></div>
+                <div class="skill-bar">
+                    <div class="skill-info"><i class='bx bxl-c-plus-plus' style="color:#044f88"></i><span>C++</span>
+                    </div>
+                    <div class="progress-line cplus"><span style="width:88%"></span></div>
                 </div>
             </div>
-        </div>
-        <div class="Container1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Creativity</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">80%</div>
-                    <div class="text">Communication</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">75%</div>
-                    <div class="text">Teamwork</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Problem Solving</div>
+            <div class="professional-skills">
+                <h3 class="sub-heading">Professional Skills</h3>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80" style="stroke-dashoffset: 80;">
+                            </circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80" style="stroke-dashoffset: 70;">
+                            </circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80" style="stroke-dashoffset: 90;">
+                            </circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Teamwork</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80" style="stroke-dashoffset: 76;">
+                            </circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="project" id="project">
-        <div class="project-skill">
-            <h1>Projects</h1>
-        </div>
-        <div class="content">
-            <div class="values">
-                <h2>E-commerce</h2>
-                <p>We are currently working on an E-Commerce project using C#. This initiative focuses on creating a
-                    robust online shopping platform that enhances user experience and functionality.</p>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>E‑commerce Platform</h3>
+                <p>Currently developing a robust online shopping platform using C#. Focus on user experience and
+                    seamless functionality.</p>
             </div>
-            <div class="values">
-                <h2>Resident Recording System</h2>
-                <p>Last year, we worked on a Resident Recording System project. This system was designed to efficiently
-                    manage and record resident information, enhancing organization and accessibility.</p>
+            <div class="project-box">
+                <h3>Resident Recording System</h3>
+                <p>Designed a system to efficiently manage and record resident information, improving organization and
+                    accessibility.</p>
             </div>
-            <div class="values">
-                <h2>Digital Library</h2>
-                <p>We are currently in the process of creating a modern and attractive digital library utilizing
-                    Greenstone and DSpace. Our goal is to provide users with a seamless and engaging experience while
-                    accessing a wide range of digital resources.</p>
+            <div class="project-box">
+                <h3>Digital Library</h3>
+                <p>Creating a modern digital library using Greenstone and DSpace to provide seamless access to digital
+                    resources.</p>
             </div>
         </div>
     </section>
 
-    <section class="Contact" id="Contact">
-        <h2>Contact <span>Me</span></h2>
-        <div class="Contact-text"></div>
-        <div class="Contact-list"></div>
-        <div class="Contact-Icons">
-            <div class="Contact-form contact-media">
-                <form action="https://t.me/@Nas87ir" class="contact-container">
-                    <input type="text" placeholder="Enter your name" required>
-                    <input type="email" placeholder="Enter your Email" required>
-                    <input type="text" placeholder="Enter your subject">
-                    <textarea name="" id="" cols="50" rows="20" placeholder="Enter your Message"></textarea>
-                    <input type="submit" value="Send" class="send">
-                </form>
-            </div>
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-telegram'></i></a>
-            </div>
-        </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
     </section>
-
+    <!-- social media Section -->
+    <div class="social-media">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-telegram'></i></a>
+    </div>
+    <!-- Footer -->
     <footer>
-        <div class="last-text">2024 &copy; All Rights Reserved</div>
+        <p>&copy; 2024 Nasir Mohammed. All Rights Reserved.</p>
+        <a href="#home" class="footer-icon"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
 
-    <a href="#" class="top"><box-icon name='up-arrow-circle'></box-icon></a>
-
-    <!-- Corrected JS path (same folder) -->
+    <!-- JavaScript -->
     <script src="main.js"></script>
 </body>
 
