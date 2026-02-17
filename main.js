@@ -1,9 +1,9 @@
 // main.js – copy your existing JS here
 var type = new Typed(".text", {
     strings: ["Welcome to my portfolio", "2024", "Jimma University", "..."],
-    typeSpeed: 80,
-    backSpeed: 200,
-    backDelay: 1000,
+    typeSpeed: 50,
+    backSpeed: 100,
+    backDelay: 500,
     loop: true
 });
 
